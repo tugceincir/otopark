@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etParkingSpot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Park edilen yerin kodu: " />
+
+    <RadioGroup
+        android:id="@+id/rgVehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbMotor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motor" />
+
+        <RadioButton
+            android:id="@+id/rbCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otomobil" />
+
+        <RadioButton
+            android:id="@+id/rbTruck"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="Kamyon" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint=" Park Süresi (0-59dk = 1 saat)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hesapla"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnrecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydedilenler" />
+
+</LinearLayout>
